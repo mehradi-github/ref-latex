@@ -7,10 +7,19 @@
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{multicol}
+\usepackage{fancyhdr}
 \setmainfont{QTCasual}[
     Path = ./fonts/,
     UprightFont = QTCasual.otf
 ]
+
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[c]{This is header.}
+\fancyfoot[c]{\thepage}
+\pagestyle{fancy}
+
+\pagenumbering{Roman}
 
 \renewcommand{\baselinestretch}{1.5}
 \setlength{\parindent}{1cm}
