@@ -1,6 +1,9 @@
 \documentclass[12pt, twoside]{book}
 \usepackage{lipsum}
 \usepackage[page,toc,title,titletoc]{appendix}
+\usepackage{fancybox}
+\usepackage{tcolorbox}
+\usepackage{verbatim}
 
 \renewcommand{\appendixpagename}{The Appendix}
 \renewcommand{\appendixtocname}{The Appendix}
@@ -37,6 +40,46 @@
 \lipsum[7]
 \paragraph{Case Base Extended}    
 \lipsum[8]
+
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at,
+tincidunt tristique, libero. Vivamus viverra fermentum felis. Donec no-
+nummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermen-
+tum massa ac quam. Sed diam turpis, molestie vitae, placerat a, molestie
+nec, leo. Maecenas lacinia.\vspace{4cm} Nam ipsum ligula, eleifend at, accumsan nec, su-
+scipit a,\hspace{4cm} ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat
+lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus vel magna.
+Integer non enim. Praesent euismod nunc eu purus. Donec bibendum quam
+in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus
+eu enim. Vestibulum pellentesque felis eu massa. ``HELLO WORLD''
+\` a
+\' a
+\^ a
+\~ a
+\c c
+\textbackslash
+\{Some Text\}
+\begin{quote}
+    \textit{\lipsum[2]}
+\end{quote}
+
+\framebox{Vestibulum pellentesque felis eu massa.}\\
+\doublebox{Vestibulum pellentesque felis eu massa.}\\
+\shadowbox{Vestibulum pellentesque felis eu massa.}\\
+\ovalbox{Vestibulum pellentesque felis eu massa.}\\
+\fbox{
+    \parbox{.5\textwidth}{\lipsum[4]}
+}
+\thisfancypage{
+    \setlength{\fboxsep}{10pt}
+    \setlength{\shadowsize}{5pt}
+    \shadowbox
+    }{}
+
+ \begin{tcolorbox}[colback=green!60, colframe=red!70, coltext= yellow!90, title=remark]
+ \lipsum[4]
+ \end{tcolorbox}   
+
+ 
 
 \clearpage
 \input{appendix}
