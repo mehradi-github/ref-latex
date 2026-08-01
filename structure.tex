@@ -1,0 +1,44 @@
+\documentclass[12pt, twoside]{book}
+\usepackage{lipsum}
+\usepackage[page,toc,title,titletoc]{appendix}
+
+\renewcommand{\appendixpagename}{The Appendix}
+\renewcommand{\appendixtocname}{The Appendix}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\iffalse
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+\fi
+\chapter{The First}
+
+\section{Introduction}
+    \lipsum[2]
+
+\setcounter{section}{7}    
+\section{Model}
+    \lipsum[3]
+\subsection{Specific Data} 
+    \lipsum[4]
+\subsection{General Data}    
+    \lipsum[5]
+\subsubsection{General Special Data}    
+    \lipsum[6]
+\paragraph{Case Base}    
+\lipsum[7]
+\paragraph{Case Base Extended}    
+\lipsum[8]
+
+\clearpage
+\input{appendix}
+
+\end{document}
