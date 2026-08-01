@@ -2,7 +2,8 @@
 \usepackage{lipsum}
 \usepackage[page,toc,title,titletoc]{appendix}
 
-\renewcommand{\appendixname}{The Appendix}
+\renewcommand{\appendixpagename}{The Appendix}
+\renewcommand{\appendixtocname}{The Appendix}
 
 \title{The greatest title in the world}
 \author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
@@ -38,10 +39,6 @@
 \lipsum[8]
 
 \clearpage
-\appendix
-\appendixpage
-\addappheadtotoc
-\section{Data Explain}    
-\lipsum[3-4]
+\input{appendix}
 
 \end{document}
