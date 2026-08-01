@@ -4,6 +4,7 @@
 \usepackage{fancybox}
 \usepackage{tcolorbox}
 \usepackage{verbatim}
+\usepackage{minted}
 
 \renewcommand{\appendixpagename}{The Appendix}
 \renewcommand{\appendixtocname}{The Appendix}
@@ -79,7 +80,10 @@ eu enim. Vestibulum pellentesque felis eu massa. ``HELLO WORLD''
  \lipsum[4]
  \end{tcolorbox}   
 
- 
+\begin{minted}{python}
+import panda as pd
+import numpy as np
+\end{minted}
 
 \clearpage
 \input{appendix}
