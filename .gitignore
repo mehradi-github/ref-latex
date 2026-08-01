@@ -1,0 +1,186 @@
+# ============================================
+# LaTeX Specific Files
+# ============================================
+
+# Standard auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.ilg
+*.ind
+*.idx
+*.glg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.fls
+*.fdb_latexmk
+*.xdv
+
+# Output formats
+*.pdf
+*.dvi
+*.ps
+*.eps
+
+# Bibliography
+*.bbl
+*.blg
+*.bib.bak
+
+# Index and glossary
+*.ilg
+*.ind
+*.idx
+*.glg
+*.glo
+*.gls
+*.ist
+
+# Pythontex
+*.pytxcode
+*.pytxcode.*
+
+# SageTeX
+*.sage
+*.sage.synctex.gz
+*.sage.py
+*.sage.sage
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# TikZ externalization
+*-tikz.pdf
+*-tikz.aux
+*-tikz.md5
+*-tikz.dep
+
+# ============================================
+# Build and Output Directories
+# ============================================
+
+build/
+output/
+dist/
+tmp/
+temp/
+_drafts/
+_posts/
+_site/
+
+# ============================================
+# Backup and Temp Files
+# ============================================
+
+*.bak
+*.backup
+*.tmp
+*.swp
+*.swo
+*~
+\#*#
+.\#*
+
+# ============================================
+# Editor and IDE Files
+# ============================================
+
+# VS Code
+.vscode/
+*.code-workspace
+.vscode-test/
+
+# IntelliJ / WebStorm / PHPStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Vim
+*.swp
+*.swo
+*~
+.*.un~
+
+# ============================================
+# OS Specific Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*.directory
+
+# ============================================
+# Temporary and Cache Files
+# ============================================
+
+*.cache
+*.md5
+*.dep
+*.auxlock
+*.lol
+*.lol.bak
+*.maf
+*.mtc
+*.mtc[0-9]*
+
+# ============================================
+# LaTeX Workshop (VS Code Extension)
+# ============================================
+
+latex-workshop.log
+latex-workshop.json
+*.synctex.gz
+*.synctex
+
+# ============================================
+# Online Services
+# ============================================
+
+# Overleaf
+.synctex.gz
+.overleaf/
