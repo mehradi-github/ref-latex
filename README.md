@@ -2,6 +2,9 @@
 
 [LaTeX](https://www.latex-project.org/) is a high-quality typesetting system; it includes features designed for the production of technical and  scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software.
 
+## Font Catalogue
+
+Finding the right font from [The Latex Font Catalogue](https://tug.org/FontCatalogue/)
 
 ## How to build Latex
 

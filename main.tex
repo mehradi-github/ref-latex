@@ -4,6 +4,12 @@
 \usepackage{lipsum}
 \usepackage{comment}
 \usepackage{ulem}
+\usepackage{fontspec}
+\setmainfont{QTCasual}[
+    Path = ./fonts/,
+    UprightFont = QTCasual.otf
+]
+
 \title{The greatest title in the world}
 \author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
 \date{\today}
@@ -33,8 +39,6 @@ hicula augue eu neque.
 {\LARGE This is the LARGE size.}\\
 {\huge This is the huge size.}\\
 {\Huge This is the Huge size.}\\
-
-\vspace{2in}
 
 \lipsum[1-6]
 \begin{comment}
