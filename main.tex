@@ -83,4 +83,26 @@ consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.
 \section{The code}
 \lipsum[1-3]
 \end{comment}
+\clearpage
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Text & \parbox{.25\textwidth}{\centering Nam arcu libero, nonummy eget,
+consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. }\\\hline
+        
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+\begin{align*}
+    \left \begin{array}{c}
+        x+y=10\\
+        x-y=5
+    \end{array}\right \} \quad \rightarrow \quad
+    \text{\parbox{5cm}{Nam arcu libero, nonummy eget,
+consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.}}
+\end{align*}
+
 \end{document}
