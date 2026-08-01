@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 \usepackage[a4paper]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{multicol}
 \usepackage{fancyhdr}
+\usepackage{amsmath}
 \usepackage[scale=0.5, text={Draft\ do\ not\ distrobute}, angle= 35, color=red]{draftwatermark}
 
 \SetWatermarkText{watermark}
@@ -97,12 +98,11 @@ consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. }\\\hline
 \end{table}
 
 \begin{align*}
-    \left \begin{array}{c}
+    \left. \begin{array}{c}
         x+y=10\\
         x-y=5
     \end{array}\right \} \quad \rightarrow \quad
     \text{\parbox{5cm}{Nam arcu libero, nonummy eget,
 consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.}}
 \end{align*}
-
 \end{document}
