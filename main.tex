@@ -1,9 +1,36 @@
-\documentclass[12pt, twocolumn]{article}
+\documentclass[12pt]{article}
 \usepackage[a4paper]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
 \usepackage{comment}
 \usepackage{ulem}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage[scale=0.5, text={Draft\ do\ not\ distrobute}, angle= 35, color=red]{draftwatermark}
+
+\SetWatermarkText{watermark}
+\SetWatermarkLightness{0.8}
+\SetWatermarkColor{green}
+
+\setmainfont{QTCasual}[
+    Path = ./fonts/,
+    UprightFont = QTCasual.otf
+]
+
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[c]{This is header.}
+\fancyfoot[c]{\thepage}
+\pagestyle{fancy}
+
+\pagenumbering{Roman}
+
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{1cm}
+
 \title{The greatest title in the world}
 \author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
 \date{\today}
@@ -16,12 +43,66 @@
 \section{Introduction}
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac,
 adipiscing \underline{vitae}, \textbf{felis}. \textit{Curabitur} \emph{dictum gravida} \uline{mauris. Nam arcu libero, nonummy eget, consectetuer
-id, vulputate a}, magna. Donec vehicula augue eu neque. 
+id, vulputate a}, \uuline{magna. Donec vehicula augue eu neque.} 
 
+\uwave{Lorem ipsum dolor sit amet}, \sout{consectetuer adipiscing elit}. \xout{Ut purus elit, vesti-
+bulum ut},\dashuline{placerat ac, adipiscing vitae, felis}. \dotuline{Curabitur dictum gravida mauris.
+Nam} arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec ve-
+hicula augue eu neque. 
+
+\clearpage
+\noindent{\tiny This is the tiny size.}\\
+{\scriptsize This is the scriptsize size.}\\
+{\small This is the small size.}\\
+{\normalsize This is the normalsize size.}\\
+{\large This is the large size.}\\
+{\Large This is the Large size.}\\
+{\LARGE This is the LARGE size.}\\
+{\huge This is the huge size.}\\
+{\Huge This is the Huge size.}\\
+
+\colorbox{yellow}{Lorem ipsum} \textcolor{red}{dolor sit amet},\colorbox{blue!60}{\textcolor{white}{consectetuer}} adipiscing elit. Ut purus elit, vestibulum ut, placerat
+ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget,
+consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. 
+
+\begin{multicols}{2}
 \lipsum[1-6]
+\end{multicols}
+
+% \raggedleft
+% \lipsum[4]
+
+% \raggedright    
+% \lipsum[4]
+
+\centering
+\lipsum[4]
+
 \begin{comment}
 \clearpage
 \section{The code}
 \lipsum[1-3]
 \end{comment}
+\clearpage
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Text & \parbox{.25\textwidth}{\centering Nam arcu libero, nonummy eget,
+consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. }\\\hline
+        
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+\begin{align*}
+    \left \begin{array}{c}
+        x+y=10\\
+        x-y=5
+    \end{array}\right \} \quad \rightarrow \quad
+    \text{\parbox{5cm}{Nam arcu libero, nonummy eget,
+consectetuer id, vulputate a, magna. Donec vehicula augue eu neque.}}
+\end{align*}
+
 \end{document}
