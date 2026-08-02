@@ -1,6 +1,17 @@
 \documentclass{beamer}
+\usetheme{Berkeley}
 \usepackage{lipsum}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usefonttheme{structurebold}
+% default, serif, structurebold, structureitalicserif, structuresmallcapsserif
+\useinnertheme{rounded}
+% default, rectangles, circles, rounded, inmargin
+\useoutertheme{sidebar}
+% infolines, miniframes, smoothbars, sidebar, split, shadow, tree, smoothtree
+% https://www.beamer.plus/Themes.html
 
 \title{Beamer Sample}
 \subtitle{That is useful as an example}
@@ -8,10 +19,12 @@
 \author{Jan Doe }
 \date{\today}
 
+
+
 \begin{document}
 \maketitle
 \section{Introduction}
-\begin{frame}{Frame Title}
+\begin{frame}{First Frame Title}
     For example I want to include an equation:
     \begin{align*}
        \int_{-\infty}^{\infty} f(x) dx        
@@ -19,7 +32,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Frame Title}
+    \frametitle{Second Frame Title}
     \begin{center}
         \begin{tabular}{cc}
             a & b \\
