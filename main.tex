@@ -1,0 +1,115 @@
+\documentclass{beamer}
+\usetheme{Berkeley}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% \usefonttheme{structurebold}
+% default, serif, structurebold, structureitalicserif, structuresmallcapsserif
+% \useinnertheme{rounded}
+% default, rectangles, circles, rounded, inmargin
+\useoutertheme{infolines}
+% infolines, miniframes, smoothbars, sidebar, split, shadow, tree, smoothtree
+% https://www.beamer.plus/Themes.html
+
+\title{Beamer Sample}
+\subtitle{That is useful as an example}
+\institute{University of East}
+\author{Jan Doe }
+\date{\today}
+
+
+
+\begin{document}
+\maketitle
+\section{Introduction}
+\begin{frame}{First Frame Title}
+    For example I want to include an equation:
+    \begin{align*}
+       \int_{-\infty}^{\infty} f(x) dx        
+    \end{align*}
+\end{frame}
+
+\section{Methodology}
+\begin{frame}
+    \frametitle{Second Frame Title}
+    \begin{center}
+        \begin{tabular}{cc}
+            a & b \\
+            \hline
+            c & d
+        \end{tabular}
+    \end{center}  
+\end{frame}
+
+\section{Results}
+\begin{frame}{Columns}
+  \begin{columns}
+    \begin{column}{.47\textwidth}
+        \begin{itemize}
+            \item First item
+            \item Second item
+            \item Third item
+        \end{itemize}        
+    \end{column}
+    \begin{column}{.47\textwidth}
+        \begin{align*}
+       \int_{0}^{10} f(x) dx
+        \end{align*}
+    \end{column}      
+  \end{columns}   
+\end{frame}
+
+
+\section{Discussion}
+\begin{frame}{To animate - First}
+    Next we will see great list: \pause
+        \begin{enumerate}
+            \item First item \pause
+            \item Second item \pause
+            \item Third item \pause
+            \item Fourth item 
+        \end{enumerate}  
+\end{frame}
+
+\begin{frame}{To animate - Second}
+    
+        \tiny
+        \lipsum[1]\\
+        \vspace{2cm}
+        \pause
+        
+        \lipsum[2]
+   
+\end{frame}
+
+
+\begin{frame}{To animate - Third}
+    Next we will see great list:
+        \begin{enumerate}
+            \item<1-2> First item
+            \item<3-> Second item
+            \item<4> Third item
+            \item<2> Fourth item 
+        \end{enumerate}  
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{To animate - Fourth}
+    In this slide, we have \onslide<2->{may elements}
+       $x+y=\onslide<3>{\sqrt{z}}$, and simple list:
+        \begin{enumerate}
+            \item First item
+            \item Second item
+            \item Third item
+        \end{enumerate}  
+    Finally we see what can do with math:
+    \begin{align}
+        f(x)=\onslide<2->{a+bx}
+    \end{align}    \\
+    \begin{align*}
+        f(x)=\onslide<3>{2x+5}
+    \end{align*}    
+\end{frame}
+\end{document}
