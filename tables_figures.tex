@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{cellspace}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+
+\section{Introduction}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{||>{\centering}m{3cm}|>{\centering\arraybackslash}m{5cm}||}
+        \hline
+        \multicolumn{2}{||c||}{Merged}\\
+        \hline
+        c & \multirow{2}{*}{house}  \\
+        \cline{1-1}
+        \cellcolor{red!50} e &  \\
+        \hline
+        \rowcolor{blue!30}
+        j & h \\
+        \hline
+    \end{tabular}
+    \caption{First table}
+    \label{tab:first}
+\end{table}
+\begin{table}[ht]
+    \centering
+    \setlength{\cellspacetoplimit}{1cm}
+    \setlength{\cellspacebottomlimit}{1cm}
+    \begin{tabular}{|Sl|Sc|}
+        \hline
+        Equation 1 & $\frac{3y^2}{2x}$\\
+        \hline
+        Equation 2 & $\frac{(1+x)^{\frac{1}{2}}}{2x}$\\
+        \hline
+    \end{tabular}
+    \caption{Second table}
+    \label{tab:second}
+\end{table}
+
+\section{Images}
+\begin{figure}
+    \centering
+\includegraphics[width=\textwidth]{images/one.png}
+\caption{The Dr Doe}
+ \label{fig:dr}   
+\end{figure}
+
+\lipsum[1-2]
+
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \begin{center}        
+        \includegraphics[width=0.3\textwidth]{images/one.png}
+        \caption{Wraped figure}
+        \label{fig:wrap_fig}  
+    \end{center} 
+\end{wrapfigure}
+\lipsum[3-6]
+\begin{figure}[ht]
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/one.png}
+        \caption{The Dr Doe 2}
+        \label{fig:dr2}   
+    \end{subfigure}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/one.png}
+        \caption{The Dr Doe 3}
+        \label{fig:dr3}   
+    \end{subfigure}
+     \caption{The set of pictures}
+\end{figure}
+\lipsum[7-10]
+\end{document}
