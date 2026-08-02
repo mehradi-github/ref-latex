@@ -184,3 +184,5 @@ latex-workshop.json
 # Overleaf
 .synctex.gz
 .overleaf/
+#===================
+_minted/
