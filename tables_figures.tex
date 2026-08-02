@@ -3,6 +3,9 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 \usepackage[table]{xcolor}
+\usepackage{cellspace}
+\usepackage[utf8]{inputenc}
+
 
 \title{The greatest title in the world}
 \author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
@@ -33,5 +36,19 @@
     \end{tabular}
     \caption{First table}
     \label{tab:first}
+\end{table}
+\begin{table}[ht]
+    \centering
+    \setlength{\cellspacetoplimit}{1cm}
+    \setlength{\cellspacebottomlimit}{1cm}
+    \begin{tabular}{|Sl|Sc|}
+        \hline
+        Equation 1 & $\frac{3y^2}{2x}$\\
+        \hline
+        Equation 2 & $\frac{(1+x)^{\frac{1}{2}}}{2x}$\\
+        \hline
+    \end{tabular}
+    \caption{Second table}
+    \label{tab:second}
 \end{table}
 \end{document}
