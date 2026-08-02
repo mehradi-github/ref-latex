@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+
+\section{Introduction}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{||>{\centering}m{3cm}|>{\centering\arraybackslash}m{5cm}||}
+        \hline
+        \multicolumn{2}{||c||}{Merged}\\
+        \hline
+        c & \multirow{2}{*}{house}  \\
+        \cline{1-1}
+        \cellcolor{red!50} e &  \\
+        \hline
+        \rowcolor{blue!30}
+        j & h \\
+        \hline
+    \end{tabular}
+    \caption{First table}
+    \label{tab:first}
+\end{table}
+\end{document}
