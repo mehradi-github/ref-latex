@@ -3,6 +3,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{dsfont}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{theorem*}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{case}{Case}
 
 \title{The greatest title in the world}
 \author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
@@ -105,5 +112,17 @@
             m_{n1} & m_{n2} & \ldots & m_{nn}
         \end{bmatrix}
 \end{align*}
-
+\begin{theorem}[Pythagores]
+    This is my Theorem.
+\end{theorem}
+\begin{proof}
+    This is proof of theorem.
+\end{proof}
+\begin{prop}
+this is my proposition.
+\end{prop}
+\begin{align}
+    \underbrace{f(x)}_{\text{left hand side}} =\overbrace{\aleph + \beta \times x}^{\text{right hand side}}\\
+e=mc^2 \tag{EFE}
+\end{align}
 \end{document}
