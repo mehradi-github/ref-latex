@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{theorem*}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{case}{Case}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+
+\section{Introduction}
+\begin{equation}
+    x+y=5 \label{eq:first}
+\end{equation}
+\begin{align}
+    x+y+z=6 \label{eq:second} \\
+    a+b=c
+\end{align}
+\(
+\aleph \beta \gamma \delta \omega \hspace{1cm}  \Gamma \Delta \Omega 
+\)\\
+\(
+= \neg \pm \times \div \equiv \approx \sim \cong \leq \geq
+\)\\
+\(
+\hat{a} \tilde{a} \dot{a}
+\)\\
+\(
+\infty
+\)\\
+\(
+\in \subset \subseteq \cup \cap \setminus
+\)\\
+\(
+\mathds{R} \mathds{C} \mathds{N} \mathds{Z}
+\)\\
+\(
+\exists \forall \rightarrow \Rightarrow \leftarrow \Leftarrow
+\)\\
+\begin{align*}
+    & x/y \\
+    & \frac{x}{y} \\
+    & \left( \frac{x}{y} \right) \\
+    & \left\{ \left( \frac{x}{y} \right) \right\} 
+\end{align*}
+\begin{align*}
+    \left. \left( \frac{x}{y} \right) \right\} 
+\end{align*}
+\begin{align*}
+    x_{i=1} \hspace{1cm} x^{(2+z)}\\
+    \sqrt{x} \hspace{1cm} \sqrt[4]{x}\\
+    \frac{\partial x}{\partial y}\\
+    \Delta x_t= x_{t}-x_{t-1}\\
+    \lim_{x\rightarrow\infty}f(x)\\
+    \sum_{i=0}^{T=5} x_i \hspace{1cm} \sum x_i\\
+    \{x_i\}_{i=0}^{N}\\
+    \int_{0}^{10} f(x) dx\\
+    \prod_{i=0}^{n} x_i\\
+    \bigcup_{i=0}^n s_i\\
+    \bigcap_{i=0}^n s_i\\
+\end{align*}
+
+\begin{align}
+    \left(
+        \begin{array}{cc}
+            a & b \\
+            c & d
+        \end{array}
+    \right)
+        \times
+    \left(
+        \begin{array}{c}
+            e \\
+            f
+        \end{array}
+    \right)
+    =
+    \left(
+        \begin{array}{c}
+            g \\
+            h
+        \end{array}
+    \right)
+\end{align}
+
+
+\begin{align*}
+        \begin{pmatrix}
+            a & b \\
+            c & d
+        \end{pmatrix}
+        \times
+        \begin{bmatrix}
+            m_{11} & m_{12} & \ldots & m_{1n} \\
+            m_{21} & m_{22} & \ldots & m_{2n} \\
+            \vdots & \vdots & \ddots & \vdots \\
+            m_{n1} & m_{n2} & \ldots & m_{nn}
+        \end{bmatrix}
+\end{align*}
+\begin{theorem}[Pythagores]
+    This is my Theorem.
+\end{theorem}
+\begin{proof}
+    This is proof of theorem.
+\end{proof}
+\begin{prop}
+this is my proposition.
+\end{prop}
+\begin{align}
+    \underbrace{f(x)}_{\text{left hand side}} =\overbrace{\aleph + \beta \times x}^{\text{right hand side}}\\
+e=mc^2 \tag{EFE}
+\end{align}
+\end{document}
