@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+
+\section{Introduction}
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at,
+tincidunt tristique, libero. Vivamus viverra fermentum felis. Donec nonummy
+pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa
+ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Mae-
+cenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum.
+Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia
+nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim.
+Praesent euismod nunc eu purus. Donec bibendum quam in tellus. Nullam cur-
+sus pulvinar lectus\cite{doe2010}. Donec et mi. Nam vulputate metus eu enim. Vestibulum
+pellentesque felis eu massa\cite{doe2012}.
+
+\clearpage
+\noindent\cite{gomez2017musculoskeletal}\\
+\cite[p.12]{gomez2017musculoskeletal}\\
+\cite[e.g.][p.12]{gomez2017musculoskeletal}\\
+\cite[e.g.][]{gomez2017musculoskeletal}\\
+\cite[][]{gomez2017musculoskeletal}\\
+\citep{gomez2017musculoskeletal}\\
+\cite*{gomez2017musculoskeletal}\\
+\citep*{gomez2017musculoskeletal}\\
+
+
+
+
+
+\bibliography{./refs/sources}
+\bibliographystyle{chicago}
+% \begin{thebibliography}{99}
+%     \bibitem{doe2010}
+%     Jone Doe,
+%     \emph{The greatest article in the world},
+%     journal of articles, 4(45):13-25, 2010.
+
+%     \bibitem{doe2012}
+%     Jone Doe,
+%     \emph{The greatest article in the world},
+%     journal of articles, 4(45):13-25, 2012.
+    
+% \end{thebibliography}
+\end{document}
