@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[noabbrev,capitalise]{cleveref}
+
+\title{The greatest title in the world}
+\author{Jan Doe \thanks{I am thanksful for the funding provided by Instituation}\\u. of south \and John Doe \thanks{email: jdoe@google.com}\\u. of North}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\textbf{Keywords}: \emph{latex, editor, lecture}
+
+\section{Introduction}
+    Nam dui ligula, fringilla a, euismod sodales \footnote{This is our footnote}, \href{www.google.com}{Google} \url{google.com} vel, wisi. Morbi auctor
+lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae
+ornare odio metus a mi. 
+\clearpage
+\begin{table}
+    \centering
+    \begin{tabular}{c|c}
+        \hline
+        a & b \\
+        \hline
+        c & d \\
+        \hline
+    \end{tabular}
+    \caption{some table}
+    \label{tab:my_table}
+\end{table}
+\begin{align}
+    x^2=y^2+\sqrt{z}\label{eq:my_equation}
+\end{align}
+
+
+\section{Conclusion}\label{dog}
+\lipsum[2-5]
+
+\section{Post Conclusion}
+Morbi ac orci et nisl hendrerit mollis. Suspendisse ut
+massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et
+magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna.
+Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris \ref{dog} in equation \ref{eq:my_equation} or \eqref{eq:my_equation} and \cref{tab:my_table,eq:my_equation}.
+
+
+\end{document}
